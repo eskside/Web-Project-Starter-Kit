@@ -1,0 +1,192 @@
+/**
+ * Base CSS Stylesheet
+ * Parts of this shamelessly adapted from HTML5 Boilerplate
+ */
+
+
+
+
+
+/* Viewport Reset */
+@-webkit-viewport{width:device-width}
+@-moz-viewport{width:device-width}
+@-ms-viewport{width:device-width}
+@viewport{width:device-width}
+
+
+
+
+
+html {
+	min-width: 15em;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	overflow-y: scroll;
+	font-size: 16px;
+	color: #26292e;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale
+}
+
+html,
+body {
+	min-height: 100%
+}
+
+
+
+
+
+/* Global Box Model inherit from HTML */
+*,
+:after,
+:before {
+	box-sizing: inherit
+}
+
+
+
+
+
+/**
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+::-moz-selection {
+	background: #9a504f;
+	color: #fff;
+	text-shadow: none
+}
+
+::selection {
+	background: #9a504f;
+	color: #fff;
+	text-shadow: none
+}
+
+
+
+
+
+/* Customize the color to match your design */
+a {
+	color: #9a504f;
+	-webkit-transition: all 300ms ease;
+	transition: all 300ms ease
+}
+
+a:focus,
+a:hover,
+a:active {
+	outline: 0
+}
+
+a:hover,
+a:focus {
+	color: #572d2c
+}
+
+strong {
+	font-weight: 700
+}
+
+small {
+	font-size: 70%
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+	margin: 0 auto;
+	border: 0
+}
+
+figure {
+	margin: 0;
+	padding: 0
+}
+
+/**
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle
+}
+
+canvas {
+	-ms-touch-action: double-tap-zoom
+}
+
+
+
+
+
+/*====================================================================
+	Helper Classes
+====================================================================*/
+/**
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.clearfix:before,
+.clearfix:after {
+	content: " "; /* 1 */
+	display: table; /* 2 */
+}
+
+.clearfix:after {
+	clear: both
+}
+
+
+
+
+
+/**
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+.clip {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px
+}
+
+/**
+ * Extends the .clip class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+.clip.focusable:active,
+.clip.focusable:focus {
+	clip: auto;
+	height: auto;
+	margin: 0;
+	overflow: visible;
+	position: static;
+	width: auto
+}

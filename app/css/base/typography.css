@@ -1,0 +1,133 @@
+/**
+ * Typography CSS Stylesheet
+ *
+ * 01. Set base fonts
+ *		 Add web fonts
+ * 02. Headlines
+ * 03. Paragraphs
+ * 04. Media Queries
+ * 05. Reset
+ */
+
+
+
+
+
+/*====================================================================
+	01 Fonts
+====================================================================*/
+body {
+	font-family: Georgia, serif
+}
+
+nav,
+#toggle,
+.headline,
+.cta-btn,
+#submit, 
+#reset,
+label {
+	font-family: Arial, sans-serif
+}
+
+/**
+ * Add webfonts once loaded to avoid 'FOIT' using FontFace Observer
+ * by Bram Stein https://github.com/bramstein/fontfaceobserver/
+ * no-js to ensure fonts show when javascript fails or disabled
+ */
+.fonts-loaded body,
+.no-js body {
+	font-family: 'WEB FONT HERE', Georgia, serif
+}
+
+/* Change font for headlines, call to action button etc */
+.fonts-loaded nav,
+.no-js nav, 
+.fonts-loaded #toggle,
+.no-js #toggle, 
+.fonts-loaded .headline,
+.no-js .headline,
+.fonts-loaded .cta-btn,
+.no-js .cta-btn, 
+.fonts-loaded #submit,
+.no-js #submit, 
+.fonts-loaded #reset,
+.no-js #reset, 
+.fonts-loaded label,
+.no-js label {
+	font-family: 'WEB FONT HERE', Arial, sans-serif
+}
+
+
+
+
+
+/*====================================================================
+	02 Headlines
+====================================================================*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+	padding: 0 0 1.25rem;
+	font-size: 1rem;
+	line-height: 1.25;
+	font-weight: normal
+}
+
+.headline--large {
+	font-size: 140%
+}
+
+.headline--small {
+	font-size: 115%
+}
+
+
+
+
+
+/*====================================================================
+	03 Paragraphs
+====================================================================*/
+p {
+	margin: 0;
+	padding: 0 0 1.5rem;
+	font-size: 1rem;
+	line-height: 1.75;
+	font-weight: normal
+}
+
+.snippet--small {
+	font-size: 85%;
+	line-height: 1.5
+}
+
+
+
+
+
+/*====================================================================
+	04 Media Queries
+====================================================================*/
+@media all and (min-width: 35em) {
+	
+}
+
+
+
+
+
+/*====================================================================
+	05 Reset
+====================================================================*/
+/* 
+ * Remove padding from last paragraph 
+ * by adding snippet--last class to <p>
+ */
+.snippet--last {
+	padding-bottom: 0
+}

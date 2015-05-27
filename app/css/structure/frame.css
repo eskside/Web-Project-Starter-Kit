@@ -1,0 +1,50 @@
+/**
+ * Framework CSS Stylesheet
+ * Create your grid in here
+ */
+
+
+
+
+/* Page Wrapper */
+.wrapper {
+	display: block;
+	position: relative;
+	margin: 0 auto;
+	max-width: 100%;
+	padding: 0
+}
+
+/* Rows to contain page elements */
+.row--wide {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.row--mid {
+	max-width: 70em;
+	margin: 0 auto;
+}
+
+.row--narrow {
+	max-width: 50em;
+	margin: 0 auto;
+}
+
+
+
+
+
+main {
+	position: relative;
+	/* Larger padding to top to compensate for fixed position header */
+	padding: 4rem .5rem .5rem;
+}
+
+
+
+
+
+@media all and (min-width: 35em) {
+	
+}

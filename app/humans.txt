@@ -1,0 +1,23 @@
+# humanstxt.org/
+
+# Creator
+
+    <Kevin Dewar> -- <esksidedesign.co.uk> -- <@esksidedesign>
+
+# THANKS
+		
+    <https://html5boilerplate.com/>
+		
+		<http://modernizr.com/>
+		
+		<http://necolas.github.io/normalize.css/>
+		
+		<http://www.filamentgroup.com/> -- <loadCSS + loadJS>
+		
+		<https://github.com/bramstein/fontfaceobserver/> -- <fontface observer>
+		
+		<https://www.google.com/fonts>
+
+# TECHNOLOGY COLOPHON
+
+    CSS3, HTML5, Apache Server Configs, jQuery, Modernizr, fontface observer, loadCSS + loadJS, Normalize.css

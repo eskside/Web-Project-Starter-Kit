@@ -1,0 +1,190 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<!-- Loads CSS if JS Fails or Disabled -->
+<noscript><link rel="stylesheet" href="css/style.css"></noscript>
+
+
+<!-- Critical Path CSS -->
+<style></style>
+
+
+<!-- 
+ * Development files. 
+ * REMOVE THESE FILES & UNCOMMENT loadCSS + loadJS BEFORE BUILD * 
+-->
+<link rel="stylesheet" href="css/style-01.min.css">
+<script src="js/script-01.min.js"></script>
+
+
+<!-- Load CSS + Load JS. Non render blocking delivery of CSS and JS - http://www.filamentgroup.com/code/ -->
+<!--<script>(function(u){function loadCSS(e,t,n){"use strict";function r(){for(var t,i=0;i<d.length;i++)d[i].href&&d[i].href.indexOf(e)>-1&&(t=!0);t?o.media=n||"all":setTimeout(r)}var o=window.document.createElement("link"),i=t||window.document.getElementsByTagName("script")[0],d=window.document.styleSheets;return o.rel="stylesheet",o.href=e,o.media="only x",i.parentNode.insertBefore(o,i),r(),o}for(var i in u){loadCSS(u[i]);}}(['css/style-01.min.css']));function loadJS(e,t){"use strict";var n=window.document.getElementsByTagName("script")[0],o=window.document.createElement("script");return o.src=e,o.async=!0,n.parentNode.insertBefore(o,n),t&&"function"==typeof t&&(o.onload=t),o}
+loadJS( 'scripts/script-01.min.js' );</script>-->
+
+
+<title>Eskside Design Small Project Starter-Kit</title>
+<meta name="description" content="A small project starter kit with minimum styles. Just enough to kickstart things off. Includes Gulpfile to auto detect changes, concatenate, minify and build project files.">
+
+</head>
+
+
+<!-- 
+ * Add a class to the body relevant to each page to allow 
+ * targeting specific pages with CSS. 
+ * Remove the class if not using. It can be useful.
+-->
+<body class="home">
+
+
+
+
+
+<!-- SVG ICONS -->
+<svg class="svg--source" width="0" height="0" aria-hidden="true">
+
+<symbol id="svg--twitter" viewbox="-.25 -7 15 30"> 
+<path d="M15.36 3.434c-0.542 0.241-1.124 0.402-1.735 0.5 0.624-0.374 1.103-0.966 1.328-1.67-0.583 0.346-1.23 0.598-1.917 0.733-0.551-0.587-1.336-0.954-2.205-0.954-1.668 0-3.020 1.352-3.020 3 0 0.2 0 0.5 0.1 0.688-2.51-0.126-4.735-1.328-6.224-3.155-0.261 0.446-0.41 0.965-0.41 1.5 0 1 0.5 2 1.3 2.514-0.495-0.016-0.961-0.151-1.368-0.378 0 0 0 0 0 0 0 1.5 1 2.7 2.4 2.962-0.253 0.069-0.52 0.106-0.796 0.106-0.194 0-0.383-0.018-0.568-0.054 0.4 1.2 1.5 2.1 2.8 2.097-1.034 0.81-2.335 1.293-3.75 1.293-0.244 0-0.484-0.014-0.72-0.042 1.3 0.9 2.9 1.4 4.6 1.4 5.6 0 8.592-4.602 8.592-8.593 0-0.13-0.002-0.261-0.009-0.39 0.59-0.426 1.102-0.958 1.507-1.563z"/>
+</symbol>
+
+<symbol id="svg--google" viewbox="-.5 -7 16 30"> 
+<path d="M1.592 4.471c0 1.2 0.4 2.1 1.2 2.6 0.6 0.4 1.4 0.5 1.8 0.5 0.1 0 0.17-0.004 0.222-0.007 0 0-0.123 0.8 0.5 1.597l-0.027-0.001c-1.031 0-4.395 0.216-4.395 3 0 2.8 3.1 3 3.7 3 0 0 0.077-0.001 0.077-0.001 0 0 0.1 0 0.1 0 0.4 0 1.426-0.050 2.381-0.514 1.238-0.601 1.867-1.647 1.867-3.108 0-1.412-0.957-2.252-1.656-2.866-0.426-0.374-0.795-0.698-0.795-1.012 0-0.32 0.269-0.561 0.61-0.866 0.55-0.493 1.070-1.194 1.070-2.521 0-1.166-0.151-1.949-1.083-2.445 0.098-0.050 0.441-0.086 0.611-0.11 0.505-0.069 1.243-0.147 1.243-0.559v-0.079h-3.678c-0.037 0.001-3.72 0.138-3.72 3.511zM7.53 11.682c0.070 1.125-0.892 1.955-2.337 2.060-1.467 0.108-2.676-0.553-2.746-1.678-0.034-0.54 0.203-1.069 0.668-1.49 0.472-0.426 1.118-0.69 1.823-0.742 0.083-0.005 0.166-0.009 0.248-0.009 1.4 0 2.3 0.8 2.3 1.859zM6.57 3.701c0.361 1.27-0.184 2.597-1.052 2.842-0.1 0.028-0.203 0.042-0.307 0.042-0.796 0-1.584-0.805-1.876-1.914-0.163-0.623-0.15-1.167 0.037-1.691 0.184-0.514 0.514-0.863 0.93-0.98 0.1-0.029 0.204-0.042 0.308-0.042 1 0 1.6 0.4 2 1.743zM12.769 6.466v-2.4h-1.52v2.4h-2.4v1.52h2.4v2.4h1.52v-2.4h2.4v-1.52h-2.4z"/>
+</symbol>
+
+</svg>
+
+
+
+
+
+<!-- Page Wrapper -->
+<div class="wrapper">
+
+
+
+
+	
+	<!-- Remove class header--fixed if not using a fixed position header -->
+	<header class="header header--fixed row--mid" role="banner">
+	
+		<a href="index.html" class="logo">
+			<!-- 
+			 * Picturefill.js pollyfill for images due to browser support for 'srcset' & 'sizes'
+			 * https://github.com/scottjehl/picturefill
+			-->
+			<img sizes="150px" srcset="images/icons/logo-small.png 150w, images/icons/logo.png 300w" alt="Company Logo">
+			
+			<!-- This text is hidden from view but still accessible to screen readers and search engines -->
+			<h1 class="clip">ADD A CHEESY SEO RELATED HEADLINE</h1>
+		</a>
+		
+		
+		
+		<!-- Navigation Toggle button. Hidden on larger screens -->
+		<a href="#" id="toggle">
+			<!-- The icon text is swaped with js on-click -->
+			<span class="nav__icon">Menu &#9776;</span> 
+			<span class="close__icon" style="display:none">Close X</span>
+		</a>
+		
+		
+		
+		<!-- 
+		 * Main Page Navigation. Hidden on smaller screens.
+		 * If using a fixed position header it's best to keep this <nav> within the header.
+		 * If not then you can move it down a level outside the header.
+		 * Leave the toggle button in the header though.
+		-->
+		<nav class="menu" role="navigation">
+		
+			<h5 class="clip">Navigation</h5>
+		
+			<ul class="nav__list clearfix">
+				<li class="nav__item"><a href="" class="nav__link current">Nav 1</a></li>
+				<li class="nav__item"><a href="" class="nav__link">Nav 2</a></li>
+				<li class="nav__item"><a href="" class="nav__link">Nav 3</a></li>
+				<li class="nav__item"><a href="" class="nav__link">Nav 4</a></li>
+			</ul>
+		</nav>
+		
+	</header>
+	
+	
+	
+	
+	
+	<main class="main row--mid" role="main">
+	
+		<h2 class="headline headline--large">LARGE HEADLINE</h2>
+	
+		<p>This is a paragraph. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto nulla temporibus doloremque, veritatis repudiandae. Voluptatum maxime dicta nesciunt aspernatur minus rem non deleniti sint odio cum ipsam recusandae mollitia quae magnam laudantium assumenda porro illo quos praesentium velit, deserunt dolore officiis. <a href="#">This is a link</a>. Sapiente, animi reiciendis. Ipsum delectus fuga odio praesentium odit?.</p>
+		
+		<h4 class="headline headline--small">SMALL HEADLINE</h4>
+		
+		<p class="snippet--small">This is a smaller font size paragraph. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem necessitatibus excepturi voluptatum nobis, blanditiis rem odit pariatur quaerat, quae consequuntur, minus eveniet, nemo! Vel, doloribus!</p>
+		
+		<a href="#" class="cta-btn">CTA BUTTON</a>
+	
+	</main>
+
+
+
+
+
+	<footer class="row--mid" role="contentinfo">
+		
+		<div class="social clearfix">
+			<a href="https://twitter.com/esksidedesign" class="sml-rnd-btn social__icon twitter">
+				<svg role="presentation" class="svg--icon"><use xlink:href="#svg--twitter"/></svg>
+				<span class="clip">Follow Eskside Design on Twitter</span>
+			</a>
+
+			<a href="https://plus.google.com/+EsksidedesignCoUk1/posts" rel="author" class="sml-rnd-btn social__icon google">
+				<svg role="presentation" class="svg--icon"><use xlink:href="#svg--google"/></svg>
+				<span class="clip">Follow Eskside Design on Twitter</span>
+			</a>
+		</div><!-- /social -->
+		
+		<a href="http://esksidedesign.co.uk/" class="copyright"><small>&copy; 2015 copyright notice in the footer</small></a>
+	
+	</footer>
+
+
+
+
+
+</div><!-- / page wrapper -->
+	
+	
+	
+	
+
+<script>	
+// Fontface Observer - Bram Stein https://github.com/bramstein/fontfaceobserver/
+// A better way to deal with web fonts. Worth considering 'Local Storage' instead
+!function(){"use strict";function t(t){this.a=c,this.b=void 0,this.d=[];var e=this;try{t(function(t){i(e,t)},function(t){o(e,t)})}catch(n){o(e,n)}}function e(e){return new t(function(t,n){n(e)})}function n(e){return new t(function(t){t(e)})}function i(t,e){if(t.a===c){if(e===t)throw new TypeError("Promise resolved with itself.");var n=!1;try{var r=e&&e.then;if(null!==e&&"object"==typeof e&&"function"==typeof r)return void r.call(e,function(e){n||i(t,e),n=!0},function(e){n||o(t,e),n=!0})}catch(a){return void(n||o(t,a))}t.a=0,t.b=e,s(t)}}function o(t,e){if(t.a===c){if(e===t)throw new TypeError("Promise rejected with itself.");t.a=1,t.b=e,s(t)}}function s(t){setTimeout(function(){if(t.a!==c)for(;t.d.length;){var e=t.d.shift(),n=e[0],i=e[1],o=e[2],e=e[3];try{0===t.a?o("function"==typeof n?n.call(void 0,t.b):t.b):1===t.a&&("function"==typeof i?o(i.call(void 0,t.b)):e(t.b))}catch(s){e(s)}}},0)}function r(e){return new t(function(t,n){function i(n){return function(i){s[n]=i,o+=1,o===e.length&&t(s)}}var o=0,s=[];0===e.length&&t(s);for(var r=0;r<e.length;r+=1)e[r].c(i(r),n)})}function a(e){return new t(function(t,n){for(var i=0;i<e.length;i+=1)e[i].c(t,n)})}var c=2;t.prototype.e=function(t){return this.c(void 0,t)},t.prototype.c=function(e,n){var i=this;return new t(function(t,o){i.d.push([e,n,t,o]),s(i)})},window.Promise||(window.Promise=t,window.Promise.resolve=n,window.Promise.reject=e,window.Promise.race=a,window.Promise.all=r,window.Promise.prototype.then=t.prototype.c,window.Promise.prototype["catch"]=t.prototype.e)}(),function(){"use strict";function t(t){this.a=document.createElement("div"),this.a.setAttribute("aria-hidden","true"),this.a.appendChild(document.createTextNode(t)),this.b=document.createElement("span"),this.c=document.createElement("span"),this.f=document.createElement("span"),this.e=document.createElement("span"),this.d=-1,this.b.style.cssText="display:inline-block;position:absolute;height:100%;width:100%;overflow:scroll;",this.c.style.cssText="display:inline-block;position:absolute;height:100%;width:100%;overflow:scroll;",this.e.style.cssText="display:inline-block;position:absolute;height:100%;width:100%;overflow:scroll;",this.f.style.cssText="display:inline-block;width:200%;height:200%;",this.b.appendChild(this.f),this.c.appendChild(this.e),this.a.appendChild(this.b),this.a.appendChild(this.c)}function e(t,e,n){t.a.style.cssText="min-width:20px;min-height:20px;display:inline-block;visibility:hidden;position:absolute;width:auto;margin:0;padding:0;top:0;white-space:nowrap;font-size:100px;font-family:"+e+";"+n}function n(t){var e=t.a.offsetWidth,n=e+100;return t.e.style.width=n+"px",t.c.scrollLeft=n,t.b.scrollLeft=t.b.scrollWidth+100,t.d!==e?(t.d=e,!0):!1}function i(t,e){t.b.addEventListener("scroll",function(){n(t)&&null!==t.a.parentNode&&e(t.d)},!1),t.c.addEventListener("scroll",function(){n(t)&&null!==t.a.parentNode&&e(t.d)},!1),n(t)}function o(t,e){this.family=t,this.style=e.style||"normal",this.variant=e.variant||"normal",this.weight=e.weight||"normal",this.stretch=e.stretch||"stretch",this.featureSettings=e.featureSettings||"normal"}var s=null;o.prototype.a=function(n){n=n||"BESbswy";var o="font-style:"+this.style+";font-variant:"+this.variant+";font-weight:"+this.weight+";font-stretch:"+this.stretch+";font-feature-settings:"+this.featureSettings+";-moz-font-feature-settings:"+this.featureSettings+";-webkit-font-feature-settings:"+this.featureSettings+";",r=document.createElement("div"),a=new t(n),c=new t(n),l=new t(n),h=-1,f=-1,d=-1,u=-1,p=-1,w=-1,m=this;return e(a,"sans-serif",o),e(c,"serif",o),e(l,"monospace",o),r.appendChild(a.a),r.appendChild(c.a),r.appendChild(l.a),document.body.appendChild(r),u=a.a.offsetWidth,p=c.a.offsetWidth,w=l.a.offsetWidth,new Promise(function(t,n){function y(){null!==r.parentNode&&document.body.removeChild(r)}function v(){if(-1!==h&&-1!==f&&-1!==d&&h===f&&f===d){if(null===s){var e=/AppleWeb[kK]it\/([0-9]+)(?:\.([0-9]+))/.exec(window.navigator.userAgent);s=!!e&&(536>parseInt(e[1],10)||536===parseInt(e[1],10)&&11>=parseInt(e[2],10))}s?h===u&&f===u&&d===u||h===p&&f===p&&d===p||h===w&&f===w&&d===w||(y(),t(m)):(y(),t(m))}}setTimeout(function(){y(),n(m)},3e3),i(a,function(t){h=t,v()}),e(a,m.family+",sans-serif",o),i(c,function(t){f=t,v()}),e(c,m.family+",serif",o),i(l,function(t){d=t,v()}),e(l,m.family+",monospace",o)})},window.FontFaceObserver=o,window.FontFaceObserver.prototype.check=o.prototype.a}(),function(t){if(!(t.document.documentElement.className.indexOf("fonts-loaded")>-1)){
+	
+	
+	// Add your web fonts here
+	var e=new t.FontFaceObserver("First Web Font Here",{weight:400}),
+			i=new t.FontFaceObserver("Second Web Font Here",{weight:400});
+	t.Promise.all([e.check(),i.check()]).then(function(){t.document.documentElement.className+=" fonts-loaded"})}}(this);	
+	
+	
+	
+	
+	
+// Google Analytics: change UA-XXXXX-X to site's ID
+(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+e.src='https://www.google-analytics.com/analytics.js';
+r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+</script>
+</body>
+</html>

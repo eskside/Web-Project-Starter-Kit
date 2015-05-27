@@ -1,0 +1,44 @@
+/**
+ * Page Header CSS Stylesheet
+ */
+
+
+.header {
+	position: relative;
+	padding: .5rem;
+	background: #fff
+}
+
+.header--fixed {
+	position: fixed;
+	z-index: 1000;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+
+
+
+
+
+.logo {
+	display: block;
+	margin: 0;
+	padding: .5rem;
+	width: 160px;
+	border: 2px solid #26292e
+}
+
+.logo:hover,
+.logo:focus {
+	opacity: .8;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)"; /* IE8 */
+}
+
+
+
+
+
+@media all and (min-width: 35em) {
+	
+}

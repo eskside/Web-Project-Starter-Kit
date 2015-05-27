@@ -1,0 +1,172 @@
+/**
+ * Form Base CSS Stylesheet
+ */
+
+
+
+
+
+form {
+	
+}
+
+
+
+
+
+fieldset {
+	margin: 0;
+	padding: 0;
+	border: 0
+}
+
+
+
+
+
+label {
+	display: block;
+	padding-bottom: .25rem;
+	font-size: 90%
+}
+
+
+
+
+
+:-moz-placeholder {
+	color: #898d8a
+} 
+
+:-ms-input-placeholder {
+	color: #898d8a
+} 
+
+::-moz-placeholder {
+	color: #898d8a
+} 
+
+::-webkit-input-placeholder {
+	color: #898d8a
+}
+
+
+
+
+
+input[type=text],
+input[type=email],
+input[type=number],
+input[type=date],
+input[type=tel] {
+	width: 100%;
+	line-height: 2.5rem;
+	padding: 0 .5rem;
+	margin: 0 0 2rem;
+	border: 0;
+	border-radius: 0;
+	border: 2px solid #26292e;
+	box-shadow: 0;
+	color: #1e211f
+}
+
+textarea {
+	width: 100%;
+	max-width: 100%;
+	height: 200px;
+	line-height: 1.5em;
+	padding: .5rem;
+	margin: 0 0 2rem;
+	border: 0;
+	border-radius: 0;
+	border: 2px solid #26292e;
+	box-shadow: 0;
+	color: #1e211f
+}
+
+/* Visual indication for invalid fields */
+input[type=text]:required:focus:invalid,
+input[type=email]:required:focus:invalid,
+input[type=number]:required:focus:invalid,
+input[type=date]:required:focus:invalid,
+input[type=tel]:required:focus:invalid,
+textarea:required:focus:invalid { 
+	outline: 0;
+	border-color: #d10000
+}
+
+/* Visual indication for valid fields */
+input[type=text]:required:focus:valid,
+input[type=email]:required:focus:valid,
+input[type=number]:required:focus:valid,
+input[type=date]:required:focus:valid,
+input[type=tel]:required:focus:valid,
+textarea:required:focus:valid,
+input[type=text]:required:valid,
+input[type=email]:required:valid,
+input[type=number]:required:valid,
+input[type=date]:required:valid,
+input[type=tel]:required:valid,
+textarea:required:valid { 
+	outline: 0;
+	border-color: #28921f
+}
+
+select {
+	width: 100%;
+	border-radius: 0;
+	color: #1e211f
+}
+
+select:focus {
+	outline: 2px solid #28921f
+}
+
+
+
+
+
+/* Submit and Reset Buttons */
+#submit, 
+#reset {
+	display: inline-block;
+	padding: 0 1.25rem;
+	margin: 0 0 1.5rem;
+	line-height: 2.5rem;
+	background: 0;
+	border: 0;
+	border-radius: 0;
+	border: 2px solid;
+	font-size: 90%;
+	transition: all 300ms ease
+}
+
+#submit {
+	border-color: #28921f;
+	color: #28921f
+}
+
+#submit:hover,
+#submit:focus {
+	background: #28921f;
+	color: #fff;
+}
+
+#reset {
+	border-color: #d10000;
+	color: #d10000
+}
+
+#reset:hover,
+#reset:focus {
+	background: #d10000;
+	color: #fff;
+}
+
+
+
+
+
+@media all and (min-width: 35em) {
+	
+}

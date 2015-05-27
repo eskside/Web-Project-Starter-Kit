@@ -1,0 +1,56 @@
+/**
+ * Social Media Icons CSS Stylesheet
+ */
+
+.social {
+	position: relative;
+	display: block;
+	padding: 0;
+	margin: 0 auto 1.5rem
+}
+
+.social__icon {
+	float: left;
+	margin: 0 .5rem 0 0
+}
+
+/* Remove margin from the last icon */
+.social__icon:last-of-type {
+	margin-right: 0
+}
+
+
+
+
+
+.twitter:hover, 
+.twitter:focus {
+	color: #00ACED
+}
+
+/** 
+ * Having Modernizr.js allows us to detect if inlineSVG is supported.
+ * Fallback if not supported
+ */
+.no-inlinesvg .twitter {
+	background: url(../images/icons/twitter.png) no-repeat center center;
+	background-size: 80% 80%
+}
+
+
+
+
+
+.google:hover, 
+.google:focus {
+	color: #dd4b39
+}
+
+/** 
+ * Having Modernizr.js allows us to detect if inlineSVG is supported.
+ * Fallback if not supported
+ */
+.no-inlinesvg .google {
+	background: url(../images/icons/googleplus.png) no-repeat center center;
+	background-size: 80% 80%
+}

@@ -1,0 +1,58 @@
+/**
+ * Buttons CSS Stylesheet
+ */
+
+
+
+
+
+button {
+	border: 0;
+	margin: 0;
+	padding: 0;
+	background: transparent
+}
+
+
+
+
+
+.cta-btn {
+	display: inline-block;
+	padding: 0 1.25rem;
+	margin: 0 0 1.5rem;
+	line-height: 2.5rem;
+	background: 0;
+	border: 2px solid #9a504f;
+	font-size: 90%;
+	color: #9a504f;
+	text-decoration: none;
+	transition: all 300ms ease;
+	box-shadow: 0 0 8px 0 rgba(50, 50, 50, 0.15)
+}
+
+.cta-btn:hover,
+.cta-btn:focus {
+	background: #9a504f;
+	color: #fff;
+	box-shadow: 0 0 16px 0 rgba(50, 50, 50, 0.45)
+}
+
+
+
+
+
+.sml-rnd-btn {
+	width: 3rem;
+	height: 3rem;
+	color: #26292e;
+	background: #fff;
+	border: 2px solid #f1f1f1;
+	border-radius: 50%;
+	box-shadow: 0 0 8px 0 rgba(50, 50, 50, 0.15)
+}
+
+.sml-rnd-btn:hover,
+.sml-rnd-btn:focus {
+	box-shadow: 0 0 16px 0 rgba(50, 50, 50, 0.45)
+}

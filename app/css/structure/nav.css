@@ -1,0 +1,107 @@
+/**
+ * Navigation CSS Stylesheet
+ */
+
+.menu {
+	height: auto;
+	width: 100%
+}
+
+.nav__list {
+	padding: .5rem 0 0;
+	margin: 0 auto;
+	width: 100%;
+	display: none;
+	height: auto
+}
+
+/* Makes Navigation visible if js fails or is disabled */
+.no-js .nav__list {
+	display: block;
+}
+
+.nav__item {
+	display: block;
+	width: 50%;
+	float: left
+}
+
+.nav__link {
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	line-height: 2.5rem;
+	font-size: 90%
+}
+
+.current {
+	text-transform: uppercase
+}
+
+
+
+
+
+/* Navigation Toggle Button */
+#toggle {
+	position: absolute;
+	top: .5rem;
+	right: 1%;
+	display: block;
+	width: 5rem;
+	line-height: 2rem;
+	text-align: center;
+	font-size: 90%;
+	border-left: 2px solid;
+	text-decoration: none
+}
+
+/* Hide toggle Button if js fails or is disabled */
+.no-js #toggle {
+	display: none;
+}
+
+#toggle:hover,
+#toggle:focus {
+	color: ;
+}
+
+
+
+
+
+@media all and (min-width: 37.5em) {
+.nav__item {
+	width: 25%
+}	
+}
+
+
+
+
+
+/**
+ * Hide the Navigation Toggle Button on larger screens
+ * and show the navigation.
+ */
+@media all and (min-width: 60em) {
+#toggle {
+	display: none;
+}
+	
+.menu {
+	position: absolute;
+	width: 75%;
+	top: .5rem;
+	right: .5rem;
+}
+	
+.nav__list {
+	display: block;
+	padding: 0
+}
+	
+.nav__link {
+	line-height: 2rem
+}
+}
