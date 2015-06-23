@@ -13,7 +13,11 @@ Any issues hit me up on [Twitter](https://twitter.com/esksidedesign)
 3. From Terminal cd into starter kit directory - example (`cd Documents/sites/your_project`)
 4. Type `sudo npm install` into the terminal (enter your computer password when promted)
 
-All node modules required for gulp to do it's magic will be installed into the `node_modules/` folder which will be created after you run `npm install`. Once complete enter `gulp serve` into the Terminal and your browser should start up and display the basic project index.html page. Now start editing the files and gulp will update and build all the relevant files and refresh the browser for you. Terminal will also show you the local and external IP. Any devices connected to your network will be able to access the project. Browser sync will refresh all the browsers on all the connected devices at the same time whenever you edit and save files. It's awesome!
+All node modules required for gulp to do it's magic will be installed into the `node_modules/` folder which will be created after you run `npm install`. Once complete enter `gulp serve` into the Terminal and your browser should start up and display the basic project index.html page. Now start editing the files and gulp will update and build all the relevant files and refresh the browser for you. 
+
+Run `gulp` in terminal to build project ready for deployment.
+
+Terminal will also show you the local and external IP. Any devices connected to your network will be able to access the project. Browser sync will refresh all the browsers on all the connected devices at the same time whenever you edit and save files. It's awesome!
 
 Each folder within the project has its own `README.md` file to explain it's purpose and add extra information.
 
