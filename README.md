@@ -15,7 +15,7 @@ Any issues hit me up on [Twitter](https://twitter.com/esksidedesign)
 
 All node modules required for gulp to do it's magic will be installed into the `node_modules/` folder which will be created after you run `npm install`. Once complete enter `gulp serve` into the Terminal and your browser should start up and display the basic project index.html page. Now start editing the files and gulp will update and build all the relevant files and refresh the browser for you. 
 
-Run `gulp` in terminal to build project ready for deployment.
+Once you have finished editing files - run `gulp` in terminal to build project ready for deployment.
 
 Terminal will also show you the local and external IP. Any devices connected to your network will be able to access the project. Browser sync will refresh all the browsers on all the connected devices at the same time whenever you edit and save files. It's awesome!
 
